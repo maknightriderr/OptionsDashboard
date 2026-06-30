@@ -16,6 +16,12 @@ import json
 import sys
 from pathlib import Path
 
+_here = Path(__file__).resolve()
+for _candidate in (_here.parent, *_here.parents):
+    if (_candidate / "config").is_dir():
+        sys.path.insert(0, str(_candidate))
+        break
+
 import pandas as pd
 import streamlit as st
 
