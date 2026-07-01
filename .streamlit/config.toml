@@ -1,0 +1,17 @@
+# Dark theme for the Option Terminal dashboard.
+# Streamlit reads this automatically when you `streamlit run dashboard/app.py`
+# from the project root.
+
+[theme]
+base = "dark"
+primaryColor = "#facc15"            # amber accent (ATM highlight, metrics)
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#161a23"
+textColor = "#e6e6e6"
+font = "monospace"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
